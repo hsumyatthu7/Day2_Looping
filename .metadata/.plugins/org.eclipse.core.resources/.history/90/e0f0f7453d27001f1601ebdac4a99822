@@ -1,0 +1,30 @@
+package com.exercise.multiplication;
+
+import java.util.Scanner;
+
+public class Multiplication {
+	
+	 public static void printMultiplicationTable(int n) {
+	        // Outer loop for the multiplicand (numbers from 1 to n)
+	        for (int i = 1; i <= n; i++) {
+	            // Inner loop for the multiplier (numbers from 1 to 10)
+	            for (int j = 1; j <= n; j++) {
+	                System.out.printf("%d * %d = %d\n", j, i, i * j);
+	            }
+	            // Separate each set of multiplication by a newline
+	            System.out.println();
+	        }
+	    }
+	    
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        System.out.print("Enter a number: ");
+	        int n = scanner.nextInt();
+	        
+	        // Print the multiplication table
+	        printMultiplicationTable(n);
+	        
+	        scanner.close();
+	    }
+
+}

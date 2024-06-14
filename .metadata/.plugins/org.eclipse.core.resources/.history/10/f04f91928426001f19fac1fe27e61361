@@ -1,0 +1,13 @@
+package com.exercise.loop;
+
+public class SumOfNaturalNumbers {
+	
+	public static int sumUsingForLoop(int n) {
+		int sum = 0;
+		for(int i=0;i<n ;i++) {
+			sum += i;
+		}
+		return sum;
+	}
+
+}
